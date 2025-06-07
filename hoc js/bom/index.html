@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="login()">đăng nhập</button>
+    <button onclick="login()">cập nhật</button>
+
+
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function login() {
+    if (true) {
+        setCookie("token", "sdfahdjkfhakf", 1);
+        setCookie("email", "nnam38789@gmail.com", 1);
+        setCookie("fullName", "Nguyen The Phuong Nam", 1);
+    }
+}
+
+function getCookie(cname) {
+    const name = cname + "=";
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        cookie = cookie.trim();
+        if (cookie.startsWith(name)) {
+            return cookie.substring(name.length);
+        }
+    }
+    return "";
+}
+let email = getCookie("email");
+console.log(email)
+
+function updateinfo(){
+    document.cookie = 'email=nnam@123'
+}
+
+let allCookie = document.cookie;
+console.log(allCookie);
+
+    </script>
+
+
+
+    <script src="./Bom.js"></script>
+
+</body>
+</html>
