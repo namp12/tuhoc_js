@@ -87,20 +87,35 @@
 
 // const listenItem = document.querySelectorAll("#menu li");
 // console.log(listenItem);
-
 // [...listenItem].forEach(function(item){
 // 	item.addEventListener("click", function(){
 // 		console.log(this);
 // 	});
 // });
 
-let info = {
-	fullName: "đặng phương nam",
-	age: 18,
-	email: "nnam38789@gmail.com",
-	getFullName: function(){
-		console.log(info.fullName);
-	}
-};
 
-console.log()
+//* this trong object : lấy đối tượng trước dấu chấm
+// let info = {
+// 	fullName: "đặng phương nam",
+// 	age: 18,
+// 	email: "nnam38789@gmail.com",
+// 	getFullName: function(){
+// 		console.log(this.fullName);
+// 	},
+// 	cccd: {
+// 		fullName: "Nguyễn Thế phương nam",
+// 		address: "số 123, đường abc",
+// 		getInfoCCCD: function(){
+// 			console.log(this.fullName);
+// 		}
+// 	}
+// };
+// info.cccd.getInfoCCCD();
+// info.getFullName();
+
+
+
+//! MODULES là một file js bình thường chỉ dơn giản là file đó sẽ đặt một cái tên có ý nghĩa
+
+
+
